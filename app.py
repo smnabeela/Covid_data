@@ -3,7 +3,12 @@ import pandas as pd
 import plotly.express as px
 
 st.set_page_config(layout="wide")
-st.header('Covid Data')
+st.title("COVID-19 Dashboard for Indian States and Union Territories")
+st.markdown("""
+**Description:** This interactive dashboard provides a comprehensive overview of the COVID-19 situation across different States and Union Territories in India. Users can select specific regions to view detailed data such as total cases, recoveries, deaths, and active cases. 
+
+The dashboard also features various visualizations, including bar charts and pie charts, to highlight trends like death rates, recovery rates, and active cases by zones. Additional insights include comparisons of states with the highest and lowest case counts, helping users better understand the distribution and severity of the pandemic across the country.
+""")
 
 data = pd.read_csv('covid_dashboard.csv')
 
