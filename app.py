@@ -5,7 +5,7 @@ import plotly.express as px
 st.set_page_config(layout="wide")
 st.header('Covid Data')
 
-data = pd.read_csv('/workspaces/Covid_data/Covid_Dashboard1.csv')
+data = pd.read_csv('covid_dashboard.csv')
 
 a = data['State/UTs'].unique()
 s = st.selectbox('Select State', (a))
