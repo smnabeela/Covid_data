@@ -55,10 +55,10 @@ with col2:
 
 colm1, colm2 = st.columns(2)
 with colm1:
-    total_cases_df = data[['State/UTs', 'Total Cases']].copy()
+    df1= data[['State/UTs', 'Total Cases']].copy()
 
-    highest_cases = total_cases_df.nlargest(5, 'Total Cases').reset_index(drop=True)
-    lowest_cases = total_cases_df.nsmallest(5, 'Total Cases').reset_index(drop=True)
+    highest_cases = df1.nlargest(5, 'Total Cases').reset_index(drop=True)
+    lowest_cases = df1.nsmallest(5, 'Total Cases').reset_index(drop=True)
 
     combined_df = pd.DataFrame({
         'Highest States': highest_cases['State/UTs'],
