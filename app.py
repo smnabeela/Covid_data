@@ -83,3 +83,4 @@ with colm1:
 
     st.markdown("<h4 style='text-align: center;'>Total Cases</h4>", unsafe_allow_html=True)
     st.write(combined_df.to_html(escape=False), unsafe_allow_html=True)
+
